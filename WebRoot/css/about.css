@@ -1,0 +1,61 @@
+ 	*{
+ 		margin: 0;
+ 		padding: 0;
+ 	}
+ 	div.bodyer{
+ 		position: absolute;
+ 		top: 10%;
+ 		left:30%;
+ 		padding:10px;
+ 		padding-top:15px;
+ 		border: 1px solid gray;
+ 		border-radius:15px;
+ 		width: 40%;
+ 	}
+	div.div1{
+		margin:10px;
+		margin-left:17px;
+		width: 87%;
+	}
+ 	div.btn1{
+		margin: 0 10%;
+ 		margin-top: 25px;
+ 		margin-bottom: 40px;
+ 	}
+ 	div.span1{
+ 		font-size: 16px;
+ 		position: absolute;
+ 		bottom: 10px;
+ 		right: 10px;
+ 	}
+ 	div.span2{
+ 		font-size: 16px;
+ 		position: relative;
+ 		left: 20px;
+ 		color: red;
+ 	}
+ 	div.aboutbd{
+ 		margin: 0 17%;
+		padding: 3% 10%;
+		margin-bottom:300px;
+ 	}
+ 	div.bdleft{
+ 		position: absolute;
+   	 	left:710px;
+   	 	top:120px;
+ 	}
+ 	div.bdright{
+ 		position: absolute;
+   	 	left:710px;
+   	 	top:320px;
+ 	}
+ 	.abfooter{
+		width:100%;
+		height:150px;
+		position: relative;
+	    bottom: 0;
+		background-color:#352ce2;
+		padding: 3% 15%;
+		color:white;
+	}
+ 	

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+    <constant name="struts.i18n.encoding" value="UTF-8"></constant>
+ 	<constant name="struts.action.extension" value="action"></constant>
+    <package name="basicstruts" extends="struts-default">
+        <action name="addUser" class="UserAction.UserAction" method="add">
+            <result name="list">/Login.jsp</result>
+            <result name="codeError">/regError.jsp</result>
+        </action>   
+	   <action name="createImageAction" class="UserAction.CreateImageAction">
+	     <result name="success" type="stream">
+	           <param name="contentType">image/jpeg</param>
+	           <param name="inputName">inputStream</param>
+	     </result>
+		</action>
+		<action name="login" class="UserAction.LoginAction" method="login">
+			<result name="loginAdmin" type="redirect">
+				<param name="location">/frame/index.jsp</param>
+	         	<param name="parse">true</param>
+			</result>
+            <result name="loginCom">/frontDesk.jsp</result>
+            <result name="loginError">/LoginError.jsp</result>
+            <result name="logCodeError">/logCodeError.jsp</result>
+        </action>
+        <action name="ajax" class="UserAction.AjaxAction" method="ajax">
+		</action>   
+		<action name="blogeditor" class="BlogEditorAction.BlogEditorAction" method="demo">
+    		<result>/result.jsp</result>
+    	</action>
+    	<action name="editorajax" class="BlogEditorAction.AjaxAction" method="ajax">
+		</action>
+    	<action name="ckeditorUpload" class="BlogEditorAction.BlogEditorAction" method="upload"></action> 
+    	<action name="deleteBlog" class="BlogEditorAction.delectAction" method="delete">
+            <result name="list" type="redirect">/BlogManage.jsp</result>
+        </action>
+        <action name="updateBlog" class="BlogEditorAction.updateAction" method="update">
+            <result name="list">/updateBlog.jsp</result>
+        </action>
+        <action name="updateBlog1" class="BlogEditorAction.updateAction" method="update1">
+            <result name="list">/result.jsp</result>
+        </action>
+        <action name="deleteMessage" class="MessageAction.MessageAction" method="delete">
+        	<result name="list" type="redirect">/MessageManage.jsp</result>
+        </action>
+        <action name="addMessage" class="MessageAction.MessageAction" method="save">
+        	<result name="save">/DisplayBlog.jsp</result>
+        	<result name="login" type="redirect">/fall.jsp</result>
+        	<result name="login1">/fall1.jsp</result>     
+        </action>
+        <action name="addComment" class="CommentAction.CommentAction" method="add">
+            <result name="add" type="chain">page1</result> 
+            <result name="login">/fall.jsp</result>
+            <result name="login1">/fall1.jsp</result> 
+        </action>
+        <action name="page" class="CommentAction.CommentAction" method="Page">
+            <result name="page">/CommentManage.jsp</result>         
+        </action>
+        <action name="page1" class="CommentAction.CommentAction" method="Page1">
+            <result name="page1">/leaveWords.jsp</result>         
+        </action>
+        <action name="deleteComment" class="CommentAction.CommentAction" method="delete">
+            <result name="del">/CommentManage.jsp</result>         
+        </action>
+        <action name="editAdmin" class="UserAction.AdminAction" method="edit">
+            <result name="edit">/editAdmin.jsp</result>
+        </action>
+        <action name="updateAdmin" class="UserAction.AdminAction" method="update">
+           <result name="list" type="chain">listAdmin</result>
+        </action>
+        <action name="listAdmin" class="UserAction.AdminAction" method="list">
+            <result name="listJsp">/AboutManage.jsp</result>
+        </action>
+        <action name="AlterRights" class="UserAction.UserAction" method="alter">
+            <result name="alter">/AlterRights.jsp</result>
+            <result name="error">/fall2.jsp</result>
+        </action> 
+    </package>
+</struts>    

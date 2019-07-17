@@ -1,0 +1,62 @@
+body{
+	background-image:url("../images/bg2.jpg");
+	background-repeat:no-repeat;
+	background-position:top;
+}
+.leabodyer{
+	margin: 0 17%;
+	padding: 3% 10%;
+	margin-bottom:200px;
+}
+.blog{
+	width:100%;
+	height:100px;
+	margin: 40px 0%;
+	box-shadow: 4px 4px 5px #888888;
+	
+}
+.blog a{
+	display: block;
+	text-decoration: none;
+    width: 100%;
+    height: 100%;
+	background-color:rgba(108, 128, 247, 0.3);
+	padding: 15px;
+	color:black;
+}
+.blog a:hover{
+	text-decoration: none;
+}
+.leafooter{
+	width:100%;
+	height:150px;
+	background-color:#352ce2;
+	padding: 3% 15%;
+	color:white;
+	position:static;
+	bottom:0;
+}
+.btn1{
+	display: inline-block;
+	margin-left:90%;
+}
+.disp{
+ 	margin: 10px 0px;
+}
+.message{
+	border-top: 2px solid black;
+	margin: 10px 0;
+	padding: 10px ;	
+}
+.mesleft{
+	float:left;
+	font-size:20px;
+}
+.mesright{
+	float:right;
+	font-size:15px;
+}
+.spanmes{
+	clear:both;
+	font-size:18px;
+}

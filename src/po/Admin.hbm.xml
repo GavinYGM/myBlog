@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="po">
+	<class name="Admin" table="admin">
+		<id name="id">
+			<generator class="assigned"></generator>
+		</id>		
+		<property name="name"></property>
+		<property name="password"></property>
+		<property name="hobby"></property>
+		<property name="age"></property>
+		<property name="email"></property>
+		<property name="signature"></property>
+	</class>
+</hibernate-mapping>

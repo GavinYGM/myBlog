@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div.header{
+    width: 100%;
+    height: 8%;
+	box-shadow: 0px 3px 5px #888888;
+	font-size:20px;
+}
+ul {
+	margin: 0;
+    padding: 0;
+    height:100%;
+    list-style-type: none;     
+ }
+ li{
+     float: right;
+ }
+li .liclass{
+	display: block;
+     color: rgb(106, 106, 107);
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+     font-size:20px;
+}
+ li a {
+     display: inline-block;
+     color: rgb(106, 106, 107);
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+     font-size:20px;
+     position: relative;
+ }
+ li .span1{
+    display: block;
+    color: rgb(83, 80, 119);
+    text-align: center;
+    padding: 14px 56px;
+    text-decoration: none;
+    font-size:25px;
+ }
+ li .span2{
+     display: block;
+     color: rgb(106, 106, 107);
+     text-align: center;
+     padding: 14px 16px;
+     margin-left:100px;
+     text-decoration: none;
+     font-size:20px;
+ }
+ li a:hover {
+ 	text-decoration: none;
+     color: #414141;
+     font-size:21px;
+ }
+div.bodyer{
+	padding: 3% 10%;
+    width: 100%;
+    height: 71%;
+}
+div.bodyer .bdleft{
+    width: 60%;
+    float:left;
+}
+div.bodyer .bdright{
+	float:right;
+    width: 40%;
+}
+div.bodyer .bdright .logo{
+	margin: 0px 20%;
+	margin-top:0;
+	margin-bottom:30px;
+}
+div.bodyer .bdright a{
+	display:block;
+	text-decoration: none;
+	font-size: 22px;
+	color: white;
+	width:100%;
+	height:100%;
+	padding: 14px 16px;
+}
+div.bodyer .bdright .recentblog{
+	margin: 20px 20%;
+	height:120px;
+	background-color:#c0c0c0;
+	box-shadow: 2px 3px 5px #888888;
+	 overflow: hidden;
+}
+div.bodyer .bdright .recentliuyan{
+	margin: 20px 20%;
+	height:120px;
+	background-color:#c0c0c0;
+	box-shadow: 2px 3px 5px #888888;
+	 overflow: hidden;
+}
+div.item img{
+    width:100%;
+}
+div#carousel-example-generic{
+  width:80%;
+  margin:0 auto;
+}
+div.footer{
+	padding: 1% 15%;
+	height:23%;
+	background-color:#352ce2;
+}
+div.footer .ftleft{
+    width: 60%;
+    float:left;
+}
+div.footer .ftright{
+	float:right;
+    width: 40%;
+}
+
